@@ -1,0 +1,21 @@
+import kotlin.math.pow
+
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+const val PI = 3.1416f
+fun main(){
+
+    val numberDecimal = 5.25;
+    println(numberDecimal);
+
+    val numberFloat = 5.25f;
+    println(numberFloat);
+
+    val area = circleArea(numberFloat)
+    println("El área del círculo es: $area")
+}
+fun circleArea(numberFloat:Float): Float{
+    return PI*numberFloat.pow(2)
+}
